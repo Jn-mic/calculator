@@ -94,6 +94,9 @@ switch (gender) {
         alert ("Your were born on " +dayName[6] +"adn your akan name is " +femaleName[6] +"cool");
     }
     break
-
-
+    default:
+}
+function findName() {
+    dayValue= calculateDayValue();
+    getGender();
 }
