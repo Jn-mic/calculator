@@ -41,5 +41,5 @@ function calculateDayValue () {
     cc= perseInt(year.subtring(0,2));
     yy= perseInt(year.substring(2,4));
     mm =perseInt(document.getElementById.("month").value);
-    dd= perseInt(document.getElementById.("day").valu)
+    dd= perseInt(document.getElementById.("day").value);
 }
