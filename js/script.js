@@ -5,23 +5,25 @@ let femaleName=["Akosua","Adwa","Abena", "Akua","Yaa" ,"Afua","Ama"];
 let cc,yy,dd,d,dayvalue;
 
 function validate() {
-let gender= document.getElementsByName("gender");
-if (document.myForm.year.value=="" || document.myForm.year.value.length !=4 || document.myForm.year.value >2000|| document.myForm.year.value<=1900) {
+    let gender= document.getElementsByName("gender");
+    if (document.myForm.year.value=="" || document.myForm.year.value.length !=4 || document.myForm.year.value >200|| document.myForm.year.value<=1900) {
     alert("Kindly provide a valid year of birth!");
     document.myForm.year.focus()
     return false;
-} else if (document.myForm.year.value =="" || isNaN (document.myForm.month.value)|| document.myForm.month.value.lenghth !=2||document.myForm.value.month >12 || document.myForm.value.month <0 ) {
+    } else if (document.myForm.year.value =="" || isNaN (document.myForm.month.value)|| document.myForm.month.value.lenghth !=2||document.myForm.value.month >12 || document.myForm.value.month < 0 ) {
     alert("Kindly provide a valid month of birth!");
 
     document.myForm.month.focus();
     return false;
-};
+    }
 
- else if (gender [0].checked==false && gender[1].checked==false){
+    else if (gender [0].checked==false && gender[1].checked==false){
     alert ("Select either male or Female!");
     return false;
-} else {
-    return true;
+    } else {
+        return true;
+    }
+    
 }
 function getGender() {
     let gender = document.getElementsByTagName("gender");
@@ -35,6 +37,7 @@ function getGender() {
         return false;
     }
 }
+
 
 function calculateDayValue () {
     year = document.getElementById("year").value;
