@@ -10,6 +10,9 @@ if (document.myForm.year.value=="" || document.myForm.year.value.length !=4 || d
     alert("Kindly provide a valid year of birth!");
     document.myForm.year.focus()
     return false;
-} else if ()
+} else if (document.myForm.year.value =="" || isNaN (document.myForm.month.value)|| document.myForm.month.value.lenghth !=2||document.myForm.value.month >12 || document.myForm.value.month <0 ) {
+    alert("Kindly provide a valid month of birth!");
+}
+    document.myForm.month.focus();
 
 }
