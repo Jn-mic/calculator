@@ -53,22 +53,22 @@ switch (gender) {
         alert ("You were born on " + dayName[0] + "and your akan name is "+maleName[0] +"is that ok?");
     }
     else if (dayvalue==2) {
-        alert ("Your were born on " +dayName[1] +"adn your akan name is " +maleName[1] +"cool");
+        alert ("Your were born on " +dayName[1] +"and your akan name is " +maleName[1] +"cool");
     }
     else if (dayvalue==3) {
-        alert ("Your were born on " +dayName[2] +"adn your akan name is " +maleName[2] +"cool");
+        alert ("Your were born on " +dayName[2] +"and your akan name is " +maleName[2] +"cool");
     }
     else if (dayvalue==4) {
-        alert ("Your were born on " +dayName[3] +"adn your akan name is " +maleName[3] +"cool");
+        alert ("Your were born on " +dayName[3] +"and your akan name is " +maleName[3] +"cool");
     }
     else if (dayvalue==5) {
-        alert ("Your were born on " +dayName[4] +"adn your akan name is " +maleName[4] +"cool");
+        alert ("Your were born on " +dayName[4] +"and your akan name is " +maleName[4] +"cool");
     }
     else if (dayvalue==6) {
-        alert ("Your were born on " +dayName[5] +"adn your akan name is " +maleName[5] +"cool");
+        alert ("Your were born on " +dayName[5] +"and your akan name is " +maleName[5] +"cool");
     }
     else if (dayvalue==-0) {
-        alert ("Your were born on " +dayName[6] +"adn your akan name is " +maleName[6] +"cool");
+        alert ("Your were born on " +dayName[6] +"and your akan name is " +maleName[6] +"cool");
     }
     break
     case "female":
@@ -76,22 +76,22 @@ switch (gender) {
         alert ("You were born on " + dayName[0] + "and your akan name is "+femaleName[0] +"is that ok?");
     }
     else if (dayvalue==2) {
-        alert ("Your were born on " +dayName[1] +"adn your akan name is " +femaleName[1] +"cool");
+        alert ("Your were born on " +dayName[1] +"and your akan name is " +femaleName[1] +"cool");
     }
     else if (dayvalue==3) {
-        alert ("Your were born on " +dayName[2] +"adn your akan name is " +femaleName[2] +"cool");
+        alert ("Your were born on " +dayName[2] +"and your akan name is " +femaleName[2] +"cool");
     }
     else if (dayvalue==4) {
-        alert ("Your were born on " +dayName[3] +"adn your akan name is " +femaleName[3] +"cool");
+        alert ("Your were born on " +dayName[3] +"and your akan name is " +femaleName[3] +"cool");
     }
     else if (dayvalue==5) {
-        alert ("Your were born on " +dayName[4] +"adn your akan name is " +femaleName[4] +"cool");
+        alert ("Your were born on " +dayName[4] +"and your akan name is " +femaleName[4] +"cool");
     }
     else if (dayvalue==6) {
-        alert ("Your were born on " +dayName[5] +"adn your akan name is " +femaleName[5] +"cool");
+        alert ("Your were born on " +dayName[5] +"and your akan name is " +femaleName[5] +"cool");
     }
     else if (dayvalue==-0) {
-        alert ("Your were born on " +dayName[6] +"adn your akan name is " +femaleName[6] +"cool");
+        alert ("Your were born on " +dayName[6] +"and your akan name is " +femaleName[6] +"cool");
     }
     break
     default:
