@@ -23,7 +23,6 @@ if (document.myForm.year.value=="" || document.myForm.year.value.length !=4 || d
 } else {
     return true;
 }
-
 function getGender() {
     let gender = document.getElementsByTagName("gender");
     if (gender[0].checked == true) {
@@ -35,4 +34,12 @@ function getGender() {
     else  {
         return false;
     }
+}
+
+function calculateDayValue () {
+    year = document.getElementById("year").value;
+    cc= perseInt(year.subtring(0,2));
+    yy= perseInt(year.substring(2,4));
+    mm =perseInt(document.getElementById.("month").value);
+    dd= perseInt(document.getElementById.("day").valu)
 }
