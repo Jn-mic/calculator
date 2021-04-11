@@ -13,43 +13,45 @@
   <title>Day of birth Calculator</title>
 </head>
 <body class="container -fluid" style="background-image: url(......);">
-  <div id="heading">
-    <img src="..." alt="Akana Names">
-    <h1>Home of Birth Day Calculation for Akan  Names.</h1>
-    <h2 id="get">It is pretty easy now "Woow".</h2>
-  </div>
+                <div id="heading">
+                  <img src="..." alt="Akana Names">
+                  <h1>Home of Birth Day Calculation for Akan  Names.</h1>
+                  <h2 id="get">It is pretty easy now "Woow".</h2>
+              </div>
   <div class="overlay">
-    <div class="container">
-      <h2>Enter your info here.</h2>
-      <form name="myForm" class="form" onsubmit="validate();"></form>
-      <div class="form-group">
-        <label for="number">Year of Birth.</label>
-        <input type="number" class="form-control" id="year" placeholder="Enter your year of Birth eg. 1980" name="year">
+      <div class="container">
+              <h2>Enter your info here.</h2>
+            <form name="myForm" class="form" onsubmit="validate();">
+                <div class="form-group">
+                  <label for="number">Year of Birth.</label>
+                  <input type="number" class="form-control" id="year" placeholder="Enter your year of Birth eg. 1980" name="year">
+                </div>  
+                <div class="form-group">
+                    <label for="number">Month of Birth.</label>
+                    <input type="number" class="form-control" id="month" placeholder="Enter your month of Birth eg. January" name="month">
+                </div>
+                <div class="form-group">
+                  <label for="number">Date of Birth.</label>
+                  <input type="number" class="form-control" id="date" placeholder="Enter your date of Birth eg. 10th" name="date">
+                </div>
+                <div class="form-group">
+                  <label for="month"> Select Gender Type.</label> <br>
+                  <div class="form-check-inline">
+                      <label class="form-check-inline">
+                      <input type="radio" class="form-check-input" name="gender" id="male"> &nbsp;male
+                  </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-inline">
+                      <input type="radio" class="form-check-input" name="gender" id="female"> &nbsp;female
+                    </label>
+                  </div>
+              </div>
+                <hr>
+                <button type="submit" class="btn btn-success"  onclick="findName();"> Find Name.</button>  <br>
+          </form>
     </div>
-    <div class="form-group">
-      <label for="number">Month of Birth.</label>
-      <input type="number" class="form-control" id="month" placeholder="Enter your month of Birth eg. January" name="month">
   </div>
-  <div class="form-group">
-    <label for="number">Date of Birth.</label>
-    <input type="number" class="form-control" id="date" placeholder="Enter your date of Birth eg. 10th" name="date">
-</div>
-  <div class="form-group">
-    <label for="month"> Select Gender Type.</label> <br>
-    <div class="form-check-inline">
-      <label class="form-check-inline">
-        <input type="radio" class="form-check-input" name="gender" id="male"> &nbsp;male
-      </label>
-    </div>
-    <div class="form-check-inline">
-      <label class="form-check-inline">
-        <input type="radio" class="form-check-input" name="gender" id="female"> &nbsp;female
-      </label>
-    </div>
-  </div>
-  <hr>
-  <button type="submit" class="btn btn-success"  onclick="findName();"> Find Name.</button>  <br>
-    </div>
-  </div>
+
 </body>
 </html>
