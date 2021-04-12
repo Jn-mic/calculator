@@ -1,4 +1,4 @@
-let dayOfWeek= ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let dayName= ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let maleName= ["Kwasi","Kwadwo","Kwebena","Kwaku","Yau","Yau","Kofi","Kwame"];
 let femaleName=["Akosua","Adwa","Abena", "Akua","Yaa" ,"Afua","Ama"];
 
@@ -6,7 +6,7 @@ let cc,yy,dd,d,dayvalue;
 
 function validate() {
     let gender= document.getElementsByName("gender");
-    if (document.myForm.year.value=="" || document.myForm.year.value.length !=4 || document.myForm.year.value >200|| document.myForm.year.value<=1900) {
+    if (document.myForm.year.value=="" || document.myForm.year.value.length !=4 || document.myForm.year.value >2100|| document.myForm.year.value<=1900) {
     alert("Kindly provide a valid year of birth!");
     document.myForm.year.focus()
     return false;
@@ -42,10 +42,8 @@ function calculateDayValue () {
     yy= perseInt(year.substring(2,4));
     mm =perseInt(document.getElementById("month").value);
     dd= perseInt(document.getElementById("date").value);
-    d=  (( (cc/4)
-    -2*cc-1) +((5*yy/4)) + ((26*(mm+1)/10)) + dd)%7;
+    d=  math.floor (( (cc/4)-2*cc-1) +((5*yy/4)) + ((26*(mm+1)/10)) + dd)%7;
     console.log(d);
-    return (math.floor(d));
 }
 switch (gender) {
     case "male":
