@@ -23,7 +23,6 @@ function validate() {
     } else {
         return true;
     }
-    
 }
 function getGender() {
     let gender = document.getElementsByTagName("gender");
@@ -37,14 +36,12 @@ function getGender() {
         return false;
     }
 }
-
-
 function calculateDayValue () {
     year = document.getElementById("year").value;
     cc= perseInt(year.subtring(0,2));
     yy= perseInt(year.substring(2,4));
-    mm =perseInt(document.getElementById.("month").value);
-    dd= perseInt(document.getElementById.("date").value);
+    mm =perseInt(document.getElementById("month").value);
+    dd= perseInt(document.getElementById("date").value);
     d=  (( (cc/4)
     -2*cc-1) +((5*yy/4)) + ((26*(mm+1)/10)) + dd)%7;
     console.log(d);
