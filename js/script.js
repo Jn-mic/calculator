@@ -4,20 +4,18 @@ let femaleName=["Akosua","Adwa","Abena", "Akua","Yaa" ,"Afua","Ama"];
 
 let cc,yy,dd,d,dayvalue;
 
-function validate() {
+let validate= () =>{
     let gender= document.getElementsByName("gender");
     if (document.myForm.year.value=="" || document.myForm.year.value.length !=4 || document.myForm.year.value >2100|| document.myForm.year.value<=1900) {
     alert("Kindly provide a valid year of birth!");
     document.myForm.year.focus()
     return false;
-    } else if (document.myForm.year.value =="" || isNaN (document.myForm.month.value)|| document.myForm.month.value.length !=2||document.myForm.value.month >12 || document.myForm.month.value < 0 ) {
+    } else if (document.myForm.month.value =="" || isNaN (document.myForm.month.value)|| document.myForm.month.value.length !=2||document.myForm.month.value>12 || document.myForm.month.value < 0 ) {
     alert("Kindly provide a valid month of birth!");
-
     document.myForm.month.focus();
     return false;
-    } else if (document.myForm.year.value=="" || isNaN (document.myForm.date.value) || document.myForm.date.value.length !=2 || document.myForm.value.date >31 || document.myForm.date.value < 0 )
+    } else if (document.myForm.date.value=="" || isNaN (document.myForm.date.value) || document.myForm.date.value.length !=2 || document.myForm.date.value >31 || document.myForm.date.value < 0 )
     document.myForm.date.focus();
-
     else if (gender [0].checked==false && gender[1].checked==false){
     alert ("Select either male or Female!");
     return false;
@@ -25,7 +23,7 @@ function validate() {
         return true;
     }
 }
-function getGender() {
+let getGender=() =>{
     let gender = document.getElementsByTagName("gender");
     if (gender[0].checked == true) {
         let gender = "male";
@@ -37,7 +35,7 @@ function getGender() {
         return false;
     }
 }
-function calculateDayValue () {
+let calculateDayValue = () => {
     year = document.getElementById("year").value;
     cc= perseInt(year.subtring(0,2));
     yy= perseInt(year.substring(2,4));
@@ -95,7 +93,7 @@ switch (gender) {
     break
     default:
 }
-function findName() {
+let findName =() =>{
     dayValue= calculateDayValue();
     getGender();
 }
