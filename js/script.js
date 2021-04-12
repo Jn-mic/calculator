@@ -10,12 +10,13 @@ function validate() {
     alert("Kindly provide a valid year of birth!");
     document.myForm.year.focus()
     return false;
-    } else if (document.myForm.year.value =="" || isNaN (document.myForm.month.value)|| document.myForm.month.value.lenghth !=2||document.myForm.value.month >12 || document.myForm.value.month < 0 ) {
+    } else if (document.myForm.year.value =="" || isNaN (document.myForm.month.value)|| document.myForm.month.value.length !=2||document.myForm.value.month >12 || document.myForm.month.value < 0 ) {
     alert("Kindly provide a valid month of birth!");
 
     document.myForm.month.focus();
     return false;
-    }
+    } else if (document.myForm.year.value=="" || isNaN (document.myForm.date.value) || document.myForm.date.value.length !=2 || document.myForm.value.date >31 || document.myForm.date.value < 0 )
+    document.myForm.date.focus();
 
     else if (gender [0].checked==false && gender[1].checked==false){
     alert ("Select either male or Female!");
