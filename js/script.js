@@ -3,18 +3,18 @@ let dayName= ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 let maleName= ["Kwasi","Kwadwo","Kwebena","Kwaku","Yau","Yau","Kofi","Kwame"];
 let femaleName=["Akosua","Adwa","Abena", "Akua","Yaa" ,"Afua","Ama"];
 // validation args
- validate= () =>{
+    let validate= function(){
     let gender= document.getElementsByName("gender");
     if (document.myForm.year.value=="" || document.myForm.year.value.length !=4 || document.myForm.year.value >2100|| document.myForm.year.value<=1900) {
     alert("Kindly provide a valid year of birth!");
-    document.myForm.year.focus();
+    document.myForm.year.innerHTML="year";
     return false;
     } else if (document.myForm.month.value =="" || isNaN (document.myForm.month.value)|| document.myForm.month.value.length !=2||document.myForm.month.value>12 || document.myForm.month.value < 0 ) {
     alert("Kindly provide a valid month of birth!");
-    document.myForm.month.focus();
+    document.myForm.month.innerHTML="month";
     return false;
     } else if (document.myForm.date.value=="" || isNaN (document.myForm.date.value) || document.myForm.date.value.length !=2 || document.myForm.date.value >31 || document.myForm.date.value < 0 )
-    document.myForm.date.focus();
+    document.myForm.date.innerHTML="date";
     else if (gender [0].checked==false && gender[1].checked==false){
     alert ("Select either male or Female!");
     return false;
