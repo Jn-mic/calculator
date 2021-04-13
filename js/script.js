@@ -7,7 +7,7 @@ let femaleName=["Akosua","Adwa","Abena", "Akua","Yaa" ,"Afua","Ama"];
     let gender= document.getElementsByName("gender");
     if (document.myForm.year.value=="" || document.myForm.year.value.length !=4 || document.myForm.year.value >2100|| document.myForm.year.value<=1900) {
     alert("Kindly provide a valid year of birth!");
-    document.myForm.year.focus()
+    document.myForm.year.focus();
     return false;
     } else if (document.myForm.month.value =="" || isNaN (document.myForm.month.value)|| document.myForm.month.value.length !=2||document.myForm.month.value>12 || document.myForm.month.value < 0 ) {
     alert("Kindly provide a valid month of birth!");
